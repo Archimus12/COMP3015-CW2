@@ -20,4 +20,6 @@ It builds upon the scene created for coursework 1.
 
 The idea is self generated and was inspired by Halloween asthetics.
 
-YouTube vid url: 
+YouTube vid url: https://www.youtube.com/watch?v=9-LGuWKxXqc
+
+GitHub: https://github.com/Archimus12/COMP3015-CW2
