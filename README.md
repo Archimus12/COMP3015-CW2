@@ -1,6 +1,6 @@
-# COMP3015-CW2I 
+# COMP3015-CW2
 
-used Visual Studio 2019.
+I used Visual Studio 2019.
 
 I used Windows 11.
 
@@ -10,6 +10,6 @@ A coder can navigate it by using Visual Studio 2019 to open the solution, if the
 
 The prototype can load different models by changing the model source.
 
-YouTube vid url: https://www.youtube.com/watch?v=y1Uk8itpd3s
+YouTube vid url: 
 
 The build is located in the x64 file, it can be run by double clicking the exe file, all the required models and shaders are stored in folders with the executable.
