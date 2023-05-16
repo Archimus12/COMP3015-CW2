@@ -11,6 +11,13 @@
 #include <fstream>
 #include <iostream>
 
+#include <cstdio>
+#include <chrono>
+#include <thread>
+
+std::chrono::system_clock::time_point frametime = std::chrono::system_clock::now();
+std::chrono::system_clock::time_point frametime2 = std::chrono::system_clock::now();
+
 class SceneRunner {
 private:
     GLFWwindow * window;
@@ -118,9 +125,23 @@ private:
 
     void mainLoop(GLFWwindow * window, Scene & scene) {
         while( ! glfwWindowShouldClose(window) && !glfwGetKey(window, GLFW_KEY_ESCAPE) ) {
+
+            frametime = std::chrono::system_clock::now();
+
+            std::chrono::duration<double, std::milli> work_time = frametime - frametime2;
+
+            if (work_time.count() < 10.0)
+            {
+                std::chrono::duration<double, std::milli> delta_ms(10.0 - work_time.count());
+                auto delta_ms_duration = std::chrono::duration_cast<std::chrono::milliseconds>(delta_ms);
+                std::this_thread::sleep_for(std::chrono::milliseconds(delta_ms_duration.count()));
+            }
+
+            frametime2 = std::chrono::system_clock::now();
+            std::chrono::duration<double, std::milli> sleep_time = frametime2 - frametime;
+
             GLUtils::checkForOpenGLError(__FILE__,__LINE__);
 			
-            //scene.update(float(glfwGetTime()));
             scene.render();
             glfwSwapBuffers(window);
 

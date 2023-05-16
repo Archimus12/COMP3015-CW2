@@ -1,16 +1,2 @@
-﻿  glad.c
-  glslprogram.cpp
-  glutils.cpp
-  objmesh.cpp
-C:\Users\archi\Desktop\Uni Work\Year 3\3015\CW2\CW2 Coding\COMP3015-CW2\helper\objmesh.cpp(188,43): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\archi\Desktop\Uni Work\Year 3\3015\CW2\CW2 Coding\COMP3015-CW2\helper\objmesh.cpp(194,50): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\archi\Desktop\Uni Work\Year 3\3015\CW2\CW2 Coding\COMP3015-CW2\helper\objmesh.cpp(198,45): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
-  plane.cpp
-  scene.cpp
-  trianglemesh.cpp
-  main.cpp
-  scenebasic_uniform.cpp
-C:\Users\archi\Desktop\Uni Work\Year 3\3015\CW2\CW2 Coding\COMP3015-CW2\scenebasic_uniform.cpp(237,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\archi\Desktop\Uni Work\Year 3\3015\CW2\CW2 Coding\COMP3015-CW2\scenebasic_uniform.cpp(311,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  Generating Code...
+﻿  main.cpp
   Project_Template.vcxproj -> C:\Users\archi\Desktop\Uni Work\Year 3\3015\CW2\CW2 Coding\COMP3015-CW2\x64\Debug\3015CW2.exe
